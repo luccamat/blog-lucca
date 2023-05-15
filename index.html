@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Lucca - Front-end Dev.">
+  <meta name="description" content="Blog & portfolio | Lucca Matheus">
+
+  <!--== Favicon ==-->
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+  
+  <!--== Fonte ==-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!--== css ==-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Lucca | Portfolio</title>
+</head>
+
+<body>
+
+  <!--== Header ==-->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#hero" class="logo">
+        <img src="assets/images/logo-dark.png" width="64" height="24" alt="...">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="assets/images/logo-light.png" width="64" height="24" alt="...">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#hero" class="navbar-link">Ínicio</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">Sobre mim</a>
+          </li>
+
+          <li>
+            <a href="#project" class="navbar-link">Projetos</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:luccamatheus_araujo@outlook.com" class="contact-link">luccamatheus_araujo@outlook.com</a>
+
+          <a href="https://wa.me/11957537646" class="contact-link">11 95753 7646</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://github.com/luccamat" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.behance.net/luccamat" target="_blank" class="social-link">
+              <ion-icon name="logo-behance"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/lucca-matheus-90333413b/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <!--== Main ==-->
+
+  <main>
+    <article>
+
+      <!--== Principal (Hero) ==-->
+
+      <section class="section hero" aria-label="home" id="hero">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="assets/images/hero-banner.png" width="560" height="540" alt="..." class="w-100"
+              data-reveal="top">
+          </figure>
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              Bem vindo(a)!
+            </h1>
+
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              Me chamo Lucca Matheus, sou estudante da área de frontent e sigo em busca de me aprimorar mais na área e alcançar meu objetivo.
+            </p>
+
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+              <a href="#project" class="btn btn-primary">Projetos</a>
+
+              <a href="https://www.linkedin.com/in/lucca-matheus-90333413b/" target="_blank" class="btn btn-secondary">Contato</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--== Sobre mim ==-->
+
+      <section class="section about" aria-label="about" id="about">
+        <div class="container">
+
+          <div class="wrapper">
+
+            <div data-reveal="left">
+              <h2 class="h2 section-title">Sobre mim</h2>
+
+              <p class="section-text">
+                Estudante autodidata de Front-end, entusiasta da área e geek.Venho atualizando meus conhecimentos e expandindo meu portfolio dentro da área.<br>Sou apaixonado por tecnologia e tenho como costume consumir conteúdos sobre a área, estou sempre buscando evoluir e me tornar o profissional que resolve o problema independente do que aconteça.<br><br>Sempre seguindo as boas práticas de código, possuo um comportamento tranquilo e focado principalmente em trabalho em grupo orientado ao objetivo de resolver o problema.
+              </p>
+            </div>
+          </div>
+
+      
+      <!--== Projetos ==-->
+
+      <section class="section project" aria-labelledby="project-label" id="project">
+        <div class="container">
+
+          <div class="title-wrapper" data-reveal="top">
+
+            <div>
+              <h2 class="h2 section-title" id="project-label">Projetos</h2>
+
+              <p class="section-text">
+                Confira abaixo meus projetos feitos até então.
+              </p>
+            </div>
+
+            <a href="https://github.com/luccamat?tab=repositories" target="_blank" class="btn btn-secondary">Repositórios no Github</a>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <!--== 1 ==-->
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #FFF">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #000"> HTML / CSS / JS</p>
+
+                  <h3 class="h3 card-title">Sidebar Responsiva</h3>
+
+                  <p class="card-text">
+                    Uma versão responsiva com modo claro e escuro para sidebar, usando HTML, CSS e JS em um estilo "Minimalista" e "Clean"
+                  </p>
+
+                  <a href="https://luccamat.github.io/responsive-sidebar/" target="_blank" class="btn-text" style="color: #000">
+                    <span class="span">Veja a demo</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                    
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/1.png" width="650" height="370" loading="lazy" alt="..."
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <!--== 2 ==-->
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #FFF">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #000">HTML / CSS</p>
+
+                  <h3 class="h3 card-title">Cards Expansivos</h3>
+
+                  <p class="card-text">
+                    Imagens que ao passar do mouse ou touch expandem podendo ou não conter informações, feita em HTML e CSS.
+                  </p>
+
+                  <a href="https://luccamat.github.io/cards-expansivos/" target="_blank" class="btn-text" style="color: #000">
+                    <span class="span">Veja a demo</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/2.png" width="650" height="370" loading="lazy" alt="..."
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+            
+            <!--== 3 ==-->
+
+            <li>
+              <div class="project-card project-card-3" style="background-color: #FFF">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #000">HTML / CSS / JS</p>
+
+                  <h3 class="h3 card-title">Portfolio web-site</h3>
+
+                  <p class="card-text">
+                    Um curriculo em formato de site responsivo e com modo escuro e claro , usando HTML, CSS e JS.
+                  </p>
+
+                  <a href="https://luccamat.github.io/portfolio/" target="_blank" class="btn-text" style="color: #000">
+                    <span class="span">Veja a demo</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/3v2.png" width="600" height="367" loading="lazy" alt="..."
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <!--== 4 ==-->
+
+            <li>
+              <div class="project-card project-card-4" style="background-color: #FFF">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #000">HTML / CSS / JS</p>
+
+                  <h3 class="h3 card-title">Slider Automático</h3>
+
+                  <p class="card-text">
+                    Um slider de imagens responsivo que muda de imagem a cada 5 segundos, feito com HTML, CSS e JS. 
+                  </p>
+
+                  <a href="https://luccamat.github.io/slider/" target="_blank" class="btn-text" style="color: #000">
+                    <span class="span">Veja a demo</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/4.png" width="620" height="370" loading="lazy" alt="..."
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <!--== 5 ==-->
+
+            <li>
+              <div class="project-card project-card-4" style="background-color: #FFF">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #000">HTML / CSS / JS</p>
+
+                  <h3 class="h3 card-title">Listagem de Pokémons (Desafio Dev em dobro)</h3>
+
+                  <p class="card-text">
+                    Listagem de Pokémons do desafio Dev em dobro do Youtube, feito com HTML, CSS e JS.
+                  </p>
+
+                  <a href="https://luccamat.github.io/listagem-pokemon/" target="_blank" class="btn-text" style="color: #000">
+                    <span class="span">Veja a demo</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/5.png" width="620" height="370" loading="lazy" alt="..."
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <!--== 6 ==-->
+            <li>
+              <div class="project-card project-card-3" style="background-color: #FFF">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #000">HTML / CSS / JS</p>
+
+                  <h3 class="h3 card-title">Designer web-site <br>(Servidor do discord)</h3>
+
+                  <p class="card-text">
+                    Um site de perfils dos designers da comunidade "Mugiwaras" do discord, feito com HTML, CSS e JS
+                  </p>
+
+                  <a href="https://luccamat.github.io/mugiwaras/" target="_blank" class="btn-text" style="color: #000">
+                    <span class="span">Veja a demo</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/6.png" width="600" height="367" loading="lazy" alt="Web Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+            
+            <!--== Ir adicionando aqui ==-->
+          </ul>
+
+        </div>
+      </section>
+
+  <!--== Footer ==-->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+       2023 | Lucca Matheus de Araujo.
+      </p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://github.com/luccamat" target="_blank" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.behance.net/luccamat" target="_blank" class="social-link">
+            <ion-icon name="logo-behance"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/lucca-matheus-90333413b/" target="_blank" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+  <!--== js ==-->
+  <script src="assets/js/script.js"></script>
+
+  <!--== ionicon ==-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
